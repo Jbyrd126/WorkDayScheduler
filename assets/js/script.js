@@ -1,9 +1,10 @@
 var timeDisplayEl = $('#currentDay');
-
-
+function getTasks() { const tasks = localStorage.getItem("textarea"); }
+document.getElementById("textarea")
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+// $(document).ready(function () { }
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -29,9 +30,11 @@ $(".saveBtn").on("click", function () {
   console.log("this is working");
 });
 
+
 function displayTime() {
   var rightNow = dayjs().format('MMM DD, YYYY hh:mm:ss a');
   timeDisplayEl.text(rightNow);
 }
+
 
 setInterval(displayTime, 1000);
