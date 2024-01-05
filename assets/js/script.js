@@ -1,6 +1,7 @@
 var timeDisplayEl = $('#currentDay');
 function getTasks() { const tasks = localStorage.getItem("textarea"); }
 document.getElementById("textarea")
+var saveBtn = $(".saveBtn");
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -26,10 +27,15 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 });
 
-$(".saveBtn").on("click", function () {
-  console.log("this is working");
-});
+saveBtn.on("click", function () {
 
+  // console.log("this is working")
+  var time = $(this).siblings(".hour").text();
+  var task = $(this).siblings(".description").val();
+
+  // THEN the text for that event is saved in local storage
+  localStorage.setItem(time, task);
+});
 
 function displayTime() {
   var rightNow = dayjs().format('MMM DD, YYYY hh:mm:ss a');
