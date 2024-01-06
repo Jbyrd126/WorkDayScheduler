@@ -11,6 +11,4 @@
 
 - 📫 How to reach me **Glurk33@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+<h3 align="center">Keemon and git sum!</h3>
