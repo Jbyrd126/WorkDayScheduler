@@ -15,4 +15,5 @@
 
 ![Screeny](WorkDay.png)
 
-<a href="https://jbyrd126.github.io/WorkDayScheduler/" align="center">Click it!</a>
+<h3 align="center">
+<a align="center" href="https://jbyrd126.github.io/WorkDayScheduler/" >Click it!</a></h3>
